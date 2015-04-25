@@ -1,24 +1,17 @@
-# node-azure-timline
-A timeline service to build your own twitter with azure tables.
+# Azure Timeline Service
 
-* Service allows a subject to post an event postEventBySubject(subject, eventMessage)
+## Overview
+This package implements a simple to use timeline service to build twitter like timelines with azure tables. The 
+following operations are available:
 
-* Service allows to query all events of one subjects queryEventsOfSubject(subject, options)
-  * Will return ordered by eventDate
-  * Query gets the following other optional parameters
-     {
-        startDate: StartDate we want to events for
-        filterBySender: senderSubject
-     }
+* post events to a specific subject and all his followers
+* establish a relationsip between two subjects
+* load the timeline of a specific subject
 
-* Service allows subject to follow other subjects: followSubject(subject, subjectToFollow)
+In addition the following features are planned
 
-* Service allows to build stat jobs
+* analytics jobs to reduce the data and build aggregate functions
 
-  * stats framework so not to deak with Azure Table at all
-
-  * countEventTypes(statResultTable, eventTypeId, timeSlice, startDate) -> Counts the amount of a specific eventTypeId over a specific timeSlice e.g. 24hrs)
-    --> ends up in a new table with the structure { timeSliceDate, eventTypeId, countValue }
-
-
+## More information
+The whole idea based on the following blog article I wrote a couple weeks ago: http://blog.dirk-eisenberg.de/2015/03/24/build-your-own-twitter-part-1-a-timeline-service-with-azure-table-store/
 
