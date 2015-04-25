@@ -5,8 +5,10 @@
   "author": "Dirk Eisenberg",
   "main": "./lib/azure-timeline-service.js",
   "dependencies": {
-    "q": "^2.0.2",
-    "azure-storage": "^0.3.2"
+    "azure-storage": "^0.3.2",
+    "azure-table-client": "^0.2.2",
+    "node-uuid": "^1.4.3",
+    "q": "^2.0.3"
   },
   "devDependencies": {
     "chai": "^1.10.0",
