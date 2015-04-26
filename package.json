@@ -1,9 +1,9 @@
 {
   "name": "azure-timeline",
   "description": "A timeline service to build your own twitter with azure tables.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Dirk Eisenberg",
-  "main": "./lib/azure-timeline-service.js",
+  "main": "./lib/azure-timeline.js",
   "dependencies": {
     "azure-storage": "^0.3.2",
     "azure-table-client": "^0.2.2",
